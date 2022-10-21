@@ -1,0 +1,1976 @@
+:root {
+  --navbar-top-height:80px;
+  --scrollbar-width:10px;
+  --banner-min-height:708px;
+}
+@media (max-width: 1024px) {
+  :root {
+    --scrollbar-width:0px;
+  }
+}
+@media (max-width: 991px) {
+  :root {
+    --navbar-top-height:60px;
+    --banner-min-height:auto;
+  }
+}
+
+/* color */
+/* top navbar */
+/* scrollbar */
+/** Donatin Payment / Card Payment **/
+.sec-donation-payment {
+  margin-top: var(--navbar-top-height);
+}
+.sec-donation-payment::before {
+  content: "";
+  display: block;
+  height: 216px;
+  width: calc(100% - var(--scrollbar-width));
+  position: fixed;
+  background-color: #004C97;
+  border-bottom: solid 10px #EC1B2D;
+  z-index: 0;
+}
+.sec-donation-payment .sec-payment {
+  clear: both;
+  border: solid 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: stretch;
+  margin: 30px auto 80px auto;
+  min-height: 662px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+}
+.sec-donation-payment .sec-payment .b-left {
+  width: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 39px 28px 39px 28px;
+  position: relative;
+  /** Thank You - Left section */
+}
+.sec-donation-payment .sec-payment .b-left .donation-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  margin: 20px 40px 20px 40px;
+  text-align: center;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-img-logo {
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-img-logo img {
+  width: 90px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .details {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-amount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-amount .amt {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #21BF73;
+  /* margin-top:5px; */
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-amount .c-edit {
+  height: 29px;
+  width: 29px;
+  min-height: 29px;
+  min-width: 29px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 10px 0px 10px 10px;
+  border-color: transparent;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-amount .c-edit:focus, .sec-donation-payment .sec-payment .b-left .donation-details .c-amount .c-edit:active, .sec-donation-payment .sec-payment .b-left .donation-details .c-amount .c-edit:active:focus {
+  border-color: #004C97;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .entity {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-options {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #000000;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  /* > span{
+    &:not(:nth-child(1)){padding-left:8.5px;margin-left:6px;background-position-y:7px;text-transform:capitalize;}
+  } */
+}
+.sec-donation-payment .sec-payment .b-left .donation-details .c-options .bullet {
+  padding-left: 4.5px;
+  margin-left: 6px;
+  background-position-y: 7px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 56px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-info {
+  display: flex;
+  flex-direction: column;
+  width: 193px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-info .campaign-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-info .name {
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-info .c-options {
+  margin-bottom: 20px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-img {
+  width: 113px;
+  height: 116px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron .donation-offer {
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron .donation-offer .c-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron .donation-offer .c-head .head {
+  color: #A7903F;
+  text-transform: uppercase;
+  padding: 3px 0px 5px 0px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron .donation-offer .c-head .program {
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron .name {
+  opacity: 0.7;
+  margin: 23px auto 3px auto;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.patron + .patron .head {
+  margin-top: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 33px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info {
+  display: flex;
+  flex-direction: column;
+  width: 195px;
+  padding-bottom: 25px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info .artwork-name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info .artist-name {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #000000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info .name {
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info .c-amount {
+  margin-bottom: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info .c-options {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-img {
+  width: 134px;
+  height: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges .award-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges .award-details h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges .award-details .type {
+  text-align: center;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges .award-details .type .adopter-privileges-types {
+  display: inline-block;
+  text-align: center;
+  height: 25px;
+  border-radius: 3px;
+  margin: 0px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0px 10px 0px 10px;
+  white-space: nowrap;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges ul {
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges li {
+  margin-bottom: 12px;
+  padding: 0px 15px 0px 15px;
+  background: transparent url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%224%22%20height%3D%224%22%20viewBox%3D%220%200%204%204%22%3E%3Ccircle%20id%3D%22Ellipse_32%22%20data-name%3D%22Ellipse%2032%22%20cx%3D%222%22%20cy%3D%222%22%20r%3D%222%22%20fill%3D%22%23A2A8AB%22%2F%3E%3C%2Fsvg%3E") center left no-repeat;
+}
+.sec-donation-payment .sec-payment .b-left .c-adopter-privileges li b {
+  font-weight: 500;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types.patron .head {
+  margin-top: 20px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="funds.svg"] {
+  width: 24px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="collections.svg"] {
+  width: 26.24px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="curatorial.svg"] {
+  width: 24.349px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="exhibition.svg"] {
+  width: 20.596px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="education.svg"] {
+  width: 19.342px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="community.svg"] {
+  width: 23.2px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-types .c-options a.box img[src*="Bulb-Innovation-02.svg"] {
+  width: 28px;
+}
+.sec-donation-payment .sec-payment .b-left .donation-offer {
+  margin-bottom: 25px;
+}
+.sec-donation-payment .sec-payment .b-left .note {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  padding: 0px 36px 23px 36px;
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+  margin: 0px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom {
+  position: static;
+  bottom: 32px;
+  width: calc(100%);
+  margin-top: 25px;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom .h-line {
+  width: 142px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom.sumry .h-line {
+  display: none;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom.sumry .note {
+  padding: 25px 15px 0px 15px;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom.thankyou .h-line {
+  margin-bottom: 30px;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom.has-secondary-account {
+  position: static;
+  width: 100%;
+}
+.sec-donation-payment .sec-payment .b-left .c-bottom.has-secondary-account .h-line {
+  margin-bottom: 50px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success {
+  text-align: center;
+  margin-top: 23px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .c-img {
+  position: relative;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .c-img .c-tick-img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* background-color: #f9fafa; */
+  position: relative;
+  z-index: 2;
+  margin: 0px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .c-img > img {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 132.081px / 2);
+  top: -8px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .title {
+  margin-top: 24px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .title h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  margin: 0px auto 17px auto;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .c-success .title p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details {
+  margin-top: 20px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amount .amt {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #21BF73;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amt-to {
+  text-align: center;
+  margin: 20px auto 5px auto;
+  width: 90%;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amt-to .amt-to {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  margin: 0px auto 5px auto;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amt-to .to {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amt-to.patron-offer .head {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #A7903F;
+  text-transform: uppercase;
+  padding: 7px 0px 7px 0px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .donation-details .c-amt-to.patron-offer .program {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .line {
+  width: 142px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0px auto 25px auto;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details .note {
+  border-top-color: transparent;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details.adopt-artowrk .donation-details .c-amt-to {
+  margin-bottom: 15px;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details.adopt-artowrk .donation-details .c-amt-to .artist-name {
+  font-weight: 500;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details.adopt-artowrk .donation-details .c-img {
+  width: 284px;
+  margin: 0px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-left .thank-you-details.adopt-artowrk .donation-details .c-img img {
+  width: 100%;
+  height: auto;
+}
+.sec-donation-payment .sec-payment .b-right {
+  width: calc(100% - 400px);
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login {
+  padding: 0px 43px 30px 43px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-no-thanks {
+  height: 72px;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-no-thanks .link-no-thanks {
+  display: none;
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0091FF;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login {
+  margin: 10px auto 0px auto;
+  width: 327px;
+  /* min-height:410px */
+  /* 350px; */
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  min-height: 1px;
+  overflow: hidden;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .tabs > li {
+  width: 50%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .tabs > li.active {
+  border-bottom-color: transparent;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .tabs > li.active a {
+  opacity: 1;
+  border-bottom-color: #004C97;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .tabs a {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border-bottom: solid 2px transparent;
+  text-align: center;
+  transition: all 0.2s;
+  margin-bottom: -1px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr {
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  margin: auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode {
+  position: relative;
+  width: 235px;
+  height: 244px;
+  margin: auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode.error_msg {
+  display: flex;
+  justify-content: center;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode.error_msg h5 {
+  color: #FF0000;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode.with-qr {
+  width: 280px;
+  height: 330px;
+  overflow: hidden;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode.with-qr iframe {
+  width: 300px;
+  height: 355px;
+  border: solid 0px #EEEEEE;
+  overflow: hidden;
+  margin-top: -20px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .c-qrcode .enroll-confirm-loader.site-loader {
+  background-color: transparent;
+  left: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .no-singpass {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .no-singpass > span {
+  font-weight: 400;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-qr .no-singpass > a {
+  font-weight: 700;
+  color: #0091FF;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login {
+  margin: 30px auto 0px auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin: 0px auto 35px auto;
+  text-align: center;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .form .password {
+  letter-spacing: 1px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .form .btn-dark {
+  height: 46px;
+  text-transform: uppercase;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .c-forgot-reset {
+  margin-top: 18px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .c-forgot-reset > a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .c-forgot-reset .forgot-singpass {
+  float: left;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .c-login .c-forgot-reset .reset-password {
+  float: right;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-myinfo p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px auto 12px auto;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-myinfo .btn.btn-myinfo {
+  margin: 0px auto 20px auto;
+  width: 200px;
+  height: 45px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-myinfo .note-myinfo {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  /* padding:0px 10% 0px 10%; */
+  margin: auto auto -5px auto;
+  /* max-width:313px; */
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-text-or {
+  height: 32px;
+  position: relative;
+  margin: 18px 0px 18px 0px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-text-or .line {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: rgba(40, 40, 40, 0.15);
+  z-index: 0;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-text-or .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-text-or.W-1 .line {
+  width: 244px;
+  left: calc((100% - 244px) / 2);
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .c-left {
+  display: flex;
+  align-items: center;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .c-left .c-img {
+  width: 58px;
+  text-align: left;
+  margin-right: 10px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .c-left .c-info {
+  padding-right: 15px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .c-left .c-info > div {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .c-left .c-info > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .btn {
+  min-width: 46px;
+  min-height: 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #004C97;
+  border: solid 2px transparent;
+  box-shadow: 0px 3px 6px rgba(0, 76, 151, 0.16);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 76, 151, 0.16);
+}
+.sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .btn:focus, .sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .btn:active, .sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll .btn:active:focus {
+  border: solid 2px #004C97;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll {
+  padding: 0px 49px 0px 49px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass {
+  height: 86px;
+  display: flex;
+  align-items: center;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass .btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border-width: 0px;
+  margin: 0px 5px 0px -15px;
+  border-color: transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass .btn:focus, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass .btn:active, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass .btn:active:focus {
+  border-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 9px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-to-singpass + .line {
+  height: 0px;
+  clear: both;
+  border-bottom: solid 1px rgba(40, 40, 40, 0.15);
+  margin: 0px 15px 0px 15px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-i-agree .line {
+  height: 1px;
+  clear: both;
+  margin: 10px 0px 20px 0px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-agree {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-agree a {
+  color: #0091FF;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password {
+  height: 0px;
+  transition: height 0.2s;
+  overflow: hidden;
+  /* .password{margin-left:1px;} */
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password input[type=password], .sec-donation-payment .sec-payment .b-right .sec-enroll .c-password input[type=text] {
+  margin-left: 1px;
+  width: calc(100% - 2px);
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .line {
+  height: 1px;
+  clear: both;
+  margin-top: 28px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .row {
+  margin-top: 28px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .form-group {
+  position: relative;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .c-password-errors {
+  position: absolute;
+  top: calc(100% - 29px);
+  right: 5px;
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  background-color: #FFFFFF;
+  z-index: 5;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  min-width: 278px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .c-password-errors span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0px;
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .c-password-errors img {
+  display: inline-block;
+  width: 15px;
+  height: auto;
+  margin: -1.5px 10px 0px 0px;
+  image-rendering: -webkit-optimize-contrast;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .c-password-errors::after {
+  content: " ";
+  position: absolute;
+  top: -12px;
+  right: 31px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #FFFFFF transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  right: 35px;
+  /* height:50px; */
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .btn {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  margin-top: 1px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .btn:focus, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .btn:active, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .btn:active:focus {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: none;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .c-img {
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password .show-password .c-img img {
+  display: inline-block;
+  width: auto;
+  height: 17px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password.animate {
+  height: 141px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password.animate .line {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password.animate.set-visible {
+  overflow: visible;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-password.animate.set-visible + .c-confirm {
+  margin-top: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm {
+  height: 84px;
+  border-top: solid 1px rgba(40, 40, 40, 0.15);
+  margin: 17px -49px 0px -49px;
+  padding-left: 49px;
+  padding-right: 49px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm > div {
+  margin: 21px 0px 21px 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .c-creat-account {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .head {
+  float: left;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 17px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button {
+  height: 40px;
+  width: 87px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button.selected, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button:focus, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button:active, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button:active:focus {
+  background-color: #FDEBEE;
+  z-index: 2;
+  border-color: #004C97;
+  box-shadow: 0px 0px 0px 1px #004C97;
+  -webkt-box-shadow: 0px 0px 0px 1px #004C97;
+  color: #004C97;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button:not(:nth-child(1)) {
+  margin-left: -5px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-confirm {
+  float: right;
+  height: 46px;
+  text-transform: uppercase;
+  width: 146px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual > div:nth-child(2) {
+  margin-top: 36px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual.patron .c-password > div {
+  margin-top: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual.patron .c-password.animate {
+  height: auto;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual.patron .c-i-agree {
+  margin-bottom: 20px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual .err-success-msg.error-msg {
+  margin-top: 5px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.individual .err-success-msg.error-msg .btn-close img {
+  opacity: 1;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate {
+  position: relative;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate > div:nth-child(3) {
+  margin-top: 36px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-no-thanks {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 49px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-no-thanks .link-no-thanks {
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0091FF;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 62px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass h4 {
+  font-size: 21px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass .err-success-msg.error-msg {
+  left: 0px;
+  margin-top: 5px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass .err-success-msg.error-msg .btn-close img {
+  opacity: 1;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass .err-success-msg.error-msg p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-to-singpass .err-success-msg.error-msg .btn {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate.patron .c-password > div {
+  margin-top: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate.patron .c-password.animate {
+  height: auto;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll.corporate.patron .c-i-agree {
+  margin-bottom: 20px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields {
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* div.select-form-control{
+    div[class$="-control"]{
+      border: solid 0px transparent;box-shadow:none;-webkit-box-shadow:none;
+      div[class$="-ValueContainer"]{
+        position:relative;padding-left: 15px;
+        div[class$="-placeholder"]{
+          position: static;-webkit-transform: none;-moz-transform: none;-ms-transform: none;transform: none;
+          &+div[class$="-Input"]{
+
+          }
+        }
+        div[class$=-singleValue]{
+          position: static;-webkit-transform: none;-moz-transform: none;-ms-transform: none;transform: none;
+          .name{display: none;}
+        }
+        div[class$="-Input"]{
+          position: relative;margin:0px 0px 0px calc(-100% + 3px);overflow: visible;
+          > div > div {position: relative!important;margin-left:15px;}
+          input[type="text"]{}
+        }
+      }
+    }
+    div[class$="-indicatorContainer"]{margin-left:-10px;}// display: none;
+    div[class$="-menu"]{width:300px;}
+    .div-option{
+      display:flex;align-items:center;justify-content:space-between;clear: both;border: solid 0px transparent;
+      .code{display: inline-block;width:40%;border: solid 0px transparent;text-align: right;}
+      .name{display: inline-block;width:60%;word-break:break-word;border: solid 0px transparent;}
+    }
+  } */
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-control] {
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-right: solid 0px transparent;
+  background-color: #FFFFFF;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  width: 90px;
+  border-radius: 5px 0px 0px 5px;
+  /* &:focus, &:active, &:active:focus{
+    border:solid 0px transparent!important;
+  } */
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-control] div[class$=-ValueContainer] {
+  /* div[class$="-placeholder"]{
+    position: static;-webkit-transform: none;-moz-transform: none;-ms-transform: none;transform: none;
+    &+div[class$="-Input"]{
+
+    }
+  } */
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-control] div[class$=-ValueContainer] div[class$=-singleValue] {
+  color: #000000;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-control] div[class$=-ValueContainer] div[class$=-singleValue] .name {
+  display: none;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-control] div[class$=-ValueContainer] div[class$=-Input] input[type=text] {
+  font-weight: 500;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-indicatorContainer] {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20id%3D%22Polygon_1%22%20data-name%3D%22Polygon%201%22%20d%3D%22M5%2C0l5%2C6H0Z%22%20transform%3D%22translate(10%206)%20rotate(180)%22%20fill%3D%22%234c565c%22%20opacity%3D%220.502%22%2F%3E%3C%2Fsvg%3E") center center no-repeat;
+  cursor: pointer;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-indicatorContainer] svg path {
+  fill: rgba(0, 0, 0, 0);
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control div[class$=-menu] {
+  width: 250px;
+  opacity: 0;
+  transition: all 0.2s;
+  z-index: 3;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control .div-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  clear: both;
+  border: solid 0px transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control .div-option .code {
+  display: inline-block;
+  width: 40%;
+  border: solid 0px transparent;
+  text-align: right;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields div.select-form-control .div-option .name {
+  display: inline-block;
+  width: 60%;
+  word-break: break-word;
+  border: solid 0px transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .v-line {
+  height: 23px;
+  width: 1px;
+  background-color: #000000;
+  opacity: 0.3;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .v-line::before {
+  content: "";
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 40px;
+  width: 1px;
+  margin-top: -10px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .form-control {
+  width: 100%;
+  border: solid 0px transparent;
+  /* background-color: transparent; */
+  flex-grow: 2;
+  border-radius: 0px 5px 5px 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .form-control:not(:placeholder-shown) {
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-left: solid 0px transparent;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .form-control:focus, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .form-control:active, .sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields .form-control:active:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields.selected {
+  border-color: #004C97;
+  box-shadow: 0px 0px 0px 1px #004C97;
+  -webkit-box-shadow: 0px 0px 0px 1px #004C97;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-mobile-number .c-fields.selected div.select-form-control div[class$=-control] {
+  border-color: transparent !important;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .tax-note {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 0.85;
+  margin-top: 5px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .invalid-feedback ~ .tax-note {
+  margin-top: 2px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 26px;
+  margin: 10px 0px 20px 0px;
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .heading h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .heading p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .c-box {
+  transition: all 0.3s;
+  /* overflow:hidden; */
+  height: 270px;
+  margin-top: 30px;
+  padding-right: 1px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .c-box.collapse {
+  height: 0px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .c-box .row {
+  padding-left: 1px;
+}
+.sec-donation-payment .sec-payment .b-right .sec-enroll .err-success-msg {
+  position: relative;
+  opacity: 1;
+  top: 15px;
+  right: -15px;
+  float: left;
+}
+.sec-donation-payment .sec-payment form#formCCPayment {
+  margin: 0px 20px 0px 20px;
+}
+
+.c-donation-e-receipt, .account-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.c-donation-e-receipt .c-img, .account-success .c-img {
+  clear: both;
+}
+.c-donation-e-receipt h3, .account-success h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 28px auto 2px auto;
+  text-align: center;
+}
+.c-donation-e-receipt .user-details, .account-success .user-details {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  margin: 0px auto 5px auto;
+}
+.c-donation-e-receipt p, .account-success p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 15px auto 49px auto;
+  width: 74%;
+  text-align: center;
+}
+.c-donation-e-receipt .btn, .account-success .btn {
+  width: auto;
+  height: 46px;
+  font-size: 14px;
+  font-weight: 700;
+  /* line-height:19px; */
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.c-donation-e-receipt-account-success .c-donation-e-receipt {
+  position: relative;
+  padding: 50px 0px 38px 0px;
+  margin: 0px 48px 0px 48px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+}
+.c-donation-e-receipt-account-success .c-donation-e-receipt h3 {
+  margin-top: 24px;
+}
+.c-donation-e-receipt-account-success .account-success {
+  position: relative;
+  padding: 63px 0px 89px 0px;
+}
+.c-donation-e-receipt-account-success .account-success img {
+  height: 61.19px;
+  width: auto;
+}
+.c-donation-e-receipt-account-success .account-success h3 {
+  line-height: 25px;
+  margin-top: 13px;
+}
+.c-donation-e-receipt-account-success .account-success p {
+  margin: 17px auto 32px auto;
+}
+.c-donation-e-receipt-account-success .account-success .btn {
+  margin-top: 20px;
+}
+
+.c-processing-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  left: -400px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #FFFFFF;
+  z-index: 2;
+  border-radius: 10px;
+  /* .sectionwise-loader{
+    transform: scale(0.5);height:45px;
+    .site-loader{background-color:$white;}
+  } */
+}
+.c-processing-payment .site-loader {
+  height: auto;
+  margin: 0px;
+}
+.c-processing-payment .site-loader.loader .dot {
+  background-color: #004C97;
+}
+.c-processing-payment h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #000000;
+  margin: 60px auto 30px auto;
+}
+.c-processing-payment p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  /* max-width:470px; */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.c-transaction-failed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+.c-transaction-failed h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 27px auto 6px auto;
+}
+.c-transaction-failed p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  margin: 0px auto 0px auto;
+}
+.c-transaction-failed .btn {
+  width: 174px;
+  height: 46px;
+  margin-top: 29px;
+  text-transform: uppercase;
+}
+
+.enroll-confirm-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  left: -400px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+.enroll-confirm-loader.site-loader {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.enroll-confirm-loader.site-loader .dot {
+  background-color: #004c97;
+}
+.enroll-confirm-loader + form {
+  touch-action: none;
+}
+
+.cvv-cvc-error {
+  min-width: 110px;
+}
+
+.c-payment {
+  max-width: 371px;
+  margin: 37px auto 37px auto;
+}
+.c-payment > div {
+  clear: both;
+}
+.c-payment .c-payment-type {
+  text-align: center;
+  margin: auto -20px 15px -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* > button{
+    display:inline-block;padding:6px;margin:0px 10px 0px 10px;border-color:transparent;
+    div{display:flex;align-items:center;justify-content:center;;overflow: hidden;}
+    &.apple-pay{
+      div{border:solid 1px rgba($text-color,1);border-radius:5px;}
+      img{display:inline-block;width:91px;height:46px;}
+    }
+    &.alipay{
+      div{width:121px;height:42px}
+      img{display:inline-block;width:154px;height:auto;}
+    }
+    &.g-pay{
+      div{border:solid 2px rgba($text-color,1);border-radius:30px;}
+      img{display:inline-block;width:86px;height:45px;margin-bottom:-3px;}
+    }
+    &:focus, &:active, &:active:focus{border-color:$base-color;}
+  } */
+}
+.c-payment .c-payment-type > div {
+  display: inline-block;
+  min-width: 80px;
+  margin: 0px 10px 0px 10px;
+}
+.c-payment .c-payment-type > div.g-pay {
+  display: flex;
+  overflow: visible;
+  margin: 0px 10px 0px 10px !important;
+  /* background-size:cover; */
+  /* width:86px;height:45px; */
+  width: 61px !important;
+  height: 45px !important;
+  border-radius: 22.5px;
+  border: solid 2px #000000;
+  overflow: hidden;
+}
+.c-payment .c-payment-type > div.g-pay button {
+  width: 86px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: solid 0px transparent;
+  overflow: hidden;
+  background-color: #FFFFFF !important;
+}
+.c-payment .c-payment-type > div.g-pay button:focus, .c-payment .c-payment-type > div.g-pay button:active, .c-payment .c-payment-type > div.g-pay button:active:focus {
+  border: solid 0px #004C97;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.c-payment .c-payment-type > div.StripeElement {
+  width: auto !important;
+}
+.c-payment .c-payment-type > div.StripeElement > div {
+  width: 100px !important;
+}
+.c-payment .c-payment-type > div.StripeElement > div iframe {
+  width: auto !important;
+  border: solid 0px transparent;
+}
+.c-payment .c-payment-type .btn-grabpay {
+  width: 80px;
+  height: 46px;
+  padding: 0px;
+  background-color: transparent;
+  margin: 0px 10px 0px 10px;
+  border: solid 1px transparent;
+  overflow: visible;
+}
+.c-payment .c-payment-type .btn-grabpay:hover {
+  background-color: transparent;
+}
+.c-payment .c-payment-type .btn-grabpay:focus, .c-payment .c-payment-type .btn-grabpay:active, .c-payment .c-payment-type .btn-grabpay:active:focus {
+  border-color: #004C97;
+  box-shadow: 0px 0px 1px #004C97;
+  -webkit-box-shadow: 0px 0px 1px #004C97;
+}
+.c-payment .c-payment-type.hide-next-OR {
+  /* display:none; */
+}
+.c-payment .c-payment-type.hide-next-OR + div.c-text-or {
+  display: none;
+}
+.c-payment .c-text-or {
+  height: 32px;
+  position: relative;
+}
+.c-payment .c-text-or .line {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: rgba(40, 40, 40, 0.15);
+  z-index: 0;
+}
+.c-payment .c-text-or .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.c-payment .btn.backto-saved-cards {
+  margin: 10px auto 15px auto;
+  color: #004C97;
+  padding: 5px;
+  border-color: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.c-payment .btn.backto-saved-cards .back-icon {
+  display: inline-block;
+  margin: 0px 7px 2px 0px;
+}
+.c-payment .btn.backto-saved-cards:hover {
+  background-color: transparent;
+}
+.c-payment .c-header {
+  margin-bottom: 19px;
+}
+.c-payment .c-header h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+.c-payment .c-header p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  padding: 0px 22px 0px 22px;
+  margin: 0px;
+  color: #000000;
+}
+.c-payment .form .cc-valid {
+  position: relative;
+}
+.c-payment .form .cc-valid img {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  height: 24px;
+  width: 36px;
+  border: none;
+  image-rendering: -webkit-optimize-contrast;
+}
+.c-payment .form .expiry-controls {
+  display: flex;
+  align-items: center;
+}
+.c-payment .form .expiry-controls > div {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
+.c-payment .form .expiry-controls.is-invalid div.select-form-control.invalid div[class$=-control] {
+  border-color: #004C97;
+  box-shadow: 0px 0px 0px 1px #004C97;
+  -webkit-box-shadow: 0px 0px 0px 1px #004C97;
+}
+.c-payment .form .cvv-cvc:not(:placeholder-shown) {
+  letter-spacing: 2px;
+}
+.c-payment .form .btn {
+  height: 46px;
+  width: 256px;
+  text-transform: uppercase;
+  margin: 5px auto 29.5px auto;
+}
+.c-payment .c-accepted-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-payment .c-accepted-cards > img {
+  margin: 7.5px;
+  width: 51px;
+  height: 33px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.sec-saved-cards .c-add-new-card .btn.btn-add-new-card {
+  margin: -5px auto 15px auto;
+  color: #004C97;
+  padding: 5px;
+  border-color: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.sec-saved-cards .c-add-new-card .btn.btn-add-new-card:hover {
+  background-color: transparent;
+}
+.sec-saved-cards .c-saved-cards {
+  margin: 0px auto 20px auto;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  border: solid 1px rgba(44, 58, 64, 0.15);
+  border-radius: 5px;
+  margin: 0px auto 15px auto;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio {
+  position: relative;
+  width: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio input[type=radio] {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  z-index: -1;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio input[type=radio]:checked + div {
+  border-color: #004c97;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio input[type=radio]:checked + div span {
+  background-color: #004C97;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio .dummy-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border: solid 2px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-radio .dummy-radio span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  transition: all 0.1s;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  width: calc(100% - 64px);
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .card-and-expired {
+  display: flex;
+  align-items: center;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-img img {
+  width: 41px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in {
+  margin-left: 14px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in .msg-ending {
+  white-space: nowrap;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in .msg-ending span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in .msg-ending span:nth-child(1) {
+  font-weight: 400;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in .msg-ending span:nth-child(2) {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-ending-in .msg-expired {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #FF0000;
+  white-space: nowrap;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry {
+  margin-right: 21px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry .msg-expiry {
+  white-space: nowrap;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry .msg-expiry span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry .msg-expiry span:nth-child(1) {
+  font-weight: 400;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry .msg-expiry span:nth-child(2) {
+  font-weight: 500;
+  margin-left: 5px;
+}
+.sec-saved-cards .c-saved-cards .item-saved-card .c-expiry .c-edit-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: rgba(0, 76, 151, 0.1);
+  cursor: pointer;
+}
+.sec-saved-cards .btn.btn-submit {
+  height: 46px;
+  width: 256px;
+  text-transform: uppercase;
+  margin: 5px auto 29.5px auto;
+}
+
+@media (max-width: 1024.5px) {
+  .sec-donation-payment::before {
+    width: calc(100% + 30.5px);
+    left: -30.5px;
+  }
+}
+@media (max-width: 991px) {
+  .sec-donation-payment .sec-payment .b-right .sec-enroll {
+    padding-left: 30.5px;
+    padding-right: 30.5px;
+    padding-bottom: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll > div:nth-child(1) {
+    padding-right: 0px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .tax-note {
+    margin-right: -10px;
+    padding-bottom: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .be-anonymous {
+    min-height: 50px;
+    align-items: flex-start;
+    /* .c-checkbox label{padding-top:4px;} */
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .ck-agree {
+    padding-top: 0px !important;
+    margin-top: 0px;
+    padding-bottom: 20px !important;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .ck-agree .c-checkbox label::before {
+    top: 2px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .ck-agree .c-checkbox label::after {
+    top: -1px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .form-group.c-agree {
+    text-align: center;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .btn.btn-confirm {
+    margin-top: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .c-password.animate {
+    height: 230px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-confirm {
+    float: none;
+    margin: 0px auto 10px auto;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .c-secondary-user .c-box {
+    height: auto;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-no-thanks {
+    right: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .sec-donation-payment .sec-payment {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    min-height: auto;
+  }
+  .sec-donation-payment .sec-payment .b-left {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-bottom:$paddingLeftRight; */
+    border-radius: 10px 10px 0px 0px;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-info, .sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-info {
+    width: 60%;
+    padding-right: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-details.campaign .c-img, .sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-img {
+    min-width: 103px;
+    width: 30%;
+    min-height: 120px;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-details.adopt-artwork .c-img {
+    min-height: auto;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-types .c-options {
+    margin-left: -5px;
+    margin-right: -5px;
+    justify-content: center;
+    padding: 0px calc((100% - 400px) / 2) 0px calc((100% - 400px) / 2);
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-types .c-options > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 145px;
+  }
+  .sec-donation-payment .sec-payment .b-left .c-bottom {
+    /* width:calc(100% - 14px * 2); */
+  }
+  .sec-donation-payment .sec-payment .b-left .c-bottom .note {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* padding-left:20px;padding-right:20px; */
+  }
+  .sec-donation-payment .sec-payment .b-right {
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    /* .sec-enroll{
+      &.individual{
+        padding-left:15px;padding-right:15px;
+      }
+    } */
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment {
+    width: auto;
+    margin-top: 40px;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment .c-payment-type {
+    margin-bottom: 20px;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment .c-payment-type .btn.g-pay {
+    /* width:66.85px!important;height:35.56px!important; */
+    width: 61px !important;
+    height: 45px !important;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment .c-payment-type .btn.apple-pay {
+    width: 70.73px !important;
+    height: 35.75px !important;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment .c-payment-type.hide-next-OR {
+    display: none;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment .c-processing-payment {
+    position: fixed;
+    left: auto;
+    padding: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment form {
+    /* margin-left:45px!important;margin-right:45px!important; */
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment form .row:nth-child(3) .form-group:nth-child(2) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment form .row:nth-last-child(1) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sec-donation-payment .sec-payment .b-right .c-payment form .row:nth-last-child(1) .btn {
+    width: 100%;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-no-thanks {
+    padding-right: 15px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login {
+    width: auto;
+    max-width: 327px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-singpass-login .no-singpass {
+    padding-bottom: 15px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-text-or {
+    margin-top: 0px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-myinfo + .c-text-or {
+    margin-top: 20px;
+  }
+  .sec-donation-payment .sec-payment .b-right .singpass-login .c-enroll {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sec-donation-payment .sec-payment .b-right > div.enroll-confirm-loader {
+    left: 0px;
+  }
+  .sec-donation-payment .sec-payment .c-accepted-cards {
+    flex-wrap: wrap;
+  }
+  .sec-donation-payment .sec-payment .c-accepted-cards > img {
+    width: 43px;
+    height: auto;
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+  }
+  .sec-donation-payment .sec-payment.adopt-artwork .b-left {
+    padding-bottom: 35px;
+  }
+  .sec-donation-payment .sec-payment .c-donation-e-receipt {
+    position: static;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sec-donation-payment .sec-payment .c-donation-e-receipt .user-details span:nth-child(2) {
+    white-space: nowrap;
+  }
+  .sec-donation-payment .sec-payment .c-donation-e-receipt p {
+    width: 100%;
+  }
+  .sec-donation-payment + .sec-footer {
+    border-top-color: transparent;
+  }
+}
+@media (max-width: 650px) {
+  .sec-donation-payment .sec-payment + .sec-footer .c-sitemap-copyright {
+    flex-direction: column;
+  }
+}
+@media (max-width: 370px) {
+  .sec-donation-payment .sec-payment .b-left .donation-types .c-options {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-types .c-options > a {
+    width: 122px;
+  }
+  .sec-donation-payment .sec-payment .b-left .donation-types .c-options > a .c-img {
+    min-width: 50px;
+  }
+  .sec-donation-payment .sec-payment .b-left .c-bottom.sumry .note {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll .c-confirm .btn-box > button {
+    width: 75px;
+  }
+  .sec-donation-payment .sec-payment .b-right .sec-enroll.corporate .c-no-thanks {
+    right: 10px;
+  }
+}

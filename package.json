@@ -1,0 +1,80 @@
+{
+  "name": "mh-donation1-pkg",
+  "version": "0.2.7",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tulsiys/donation.git"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^1.5.0",
+    "@babel/polyfill": "^7.12.1",
+    "@google-pay/button-react": "^2.5.0",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.16.0",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "amazon-cognito-identity-js": "^5.0.3",
+    "axios": "^0.26.0",
+    "braintree-web": "^3.85.2",
+    "core-js": "^3.14.0",
+    "formik": "^2.2.9",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.3.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "react": "^16.0.0",
+    "react-app-polyfill": "^2.0.0",
+    "react-bootstrap-table": "^4.3.1",
+    "react-confetti": "^6.0.1",
+    "react-currency-format": "^1.0.0",
+    "react-datetime": "^3.0.4",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-share": "^4.4.0",
+    "react-slick": "^0.28.1",
+    "react-stack-grid": "^0.7.1",
+    "styled-components": "^5.3.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "dotenv": "^10.0.0"
+  }
+}

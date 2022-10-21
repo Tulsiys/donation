@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Donation-Widget</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- <meta name="description" content="">
+  <meta name="keywords" content=""> -->
+  <!-- <link href="" rel="canonical"> -->
+
+  <meta name="apple-mobile-web-app-title" content="">
+  <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/apple-touch-icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/apple-touch-icon-512x512.png">
+
+  <link rel="icon" sizes="192x192" type="image/png" href="%PUBLIC_URL%/android-chrome-192x192.png">
+  <link rel="icon" sizes="96x96" type="image/png" href="%PUBLIC_URL%/favicon-96x96.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" type="image/png" href="%PUBLIC_URL%/favicon-16x16.png">
+
+  <!-- <link rel="stylesheet" type="text/css" charset="UTF-8"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" /> -->
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" cache="no">
+  <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/favicon.png">
+
+  <script src="https://secure.worldpay.com/resources/cse/js/worldpay-cse-1.latest.min.js"></script>
+  <script src="https://pay.google.com/gp/p/js/pay.js" id="GPay"></script>
+  
+  <!-- Apple Pay script -->
+  <!-- <link rel="stylesheet" href="css/base.css" />
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/utils.js" defer></script>
+  <script src="/apple-pay.js" defer></script> -->
+  <!-- Apple pay script end -->
+
+  <!-- Grab pay script start -->
+  <!-- <link rel="stylesheet" href="css/base.css" /> -->
+  <!-- <script src="https://js.stripe.com/v3/"></script>
+  <script src="/utils.js" defer></script>
+  <script src="/grab-pay.js" defer></script> -->
+  <!-- Grab pay script end -->
+
+
+  <style type="text/css">
+    .html,
+    body {
+      background-color: rgba(76, 86, 92, 0.03);
+    }
+
+    /* .site-loader {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      filter: saturate(1.4);
+      background: #f6f6f6 url("data:image/gif;base64,R0lGODlhRABEAPMBALQXHrglK70yOMFARsZOU8RITrYcI7kmLbYeJcRKT8E+RLooL////wAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNzdGMTE3NDA3MjA2ODExODA4M0VCODNDNjJCRDdDMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxOUI3QzU2NTBEQjExMUU1OTVFQUQ3RENCQzYzMDkzQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxOUI3QzU2NDBEQjExMUU1OTVFQUQ3RENCQzYzMDkzQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Q0QxMzI0QUU0NTIwNjgxMTgwODNFRkI2MzdERTA4M0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Q0ExMzI0QUU0NTIwNjgxMTgwODNFRkI2MzdERTA4M0EiLz4gPC9yZGY6RGVzY3JpcHRpb24+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") center center no-repeat;
+    } */
+  </style> 
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <main>
+      <div id="payment-request-button">
+        <!--(apple pay button rendering) A Stripe Element will be inserted here if the browser supports this type of payment method. -->
+      </div>
+      <!-- <form id="payment-form">
+        <button>Grab Pay</button>
+      </form> -->
+      <div id="messages" role="alert"></div>
+    </main>
+  </div>
+</body>
+
+</html>
